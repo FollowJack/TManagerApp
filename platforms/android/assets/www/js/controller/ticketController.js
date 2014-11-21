@@ -1,5 +1,4 @@
-angular.module('ControllerModule', [])
-    .controller('TicketController', ['$scope', function ($scope) {
+tManager.controller('TicketController', function ($scope,TicketService) {
 
         $scope.hello = "Bla";
 
@@ -26,9 +25,9 @@ angular.module('ControllerModule', [])
             "modifiedOn": "2014-11-13T00:00:00+01:00"
         };
 
-        $scope.tickets = [ticket1,ticket2];
+        $scope.tickets = TicketService.get();
 
-    }]);
+    });
 
 
 /* dependencies *//*

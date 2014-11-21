@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ControllerModule">
+<html ng-app="tManager">
 <head>
     <title>TMAnagerApp</title>
     <meta charset="utf-8"/>
@@ -16,12 +16,14 @@
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
     <script type="text/javascript" src="js/lib/angularJs/angular.js"></script>
 
-    <!-- controller -->
-    <script type="text/javascript" src="js/controller/ticketController.js"></script>
-    <!-- services -->
-    <script type="text/javascript" src="cordova.js"></script>
     <!-- infrastructure -->
     <script type="text/javascript" src="js/infrastructure/index.js"></script>
+    <script type="text/javascript" src="js/infrastructure/route.js"></script>
+    <!-- services -->
+    <script type="text/javascript" src="js/services/ticketService.js"></script>
+    <!-- controller -->
+    <script type="text/javascript" src="js/controller/ticketController.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
 </head>
 
 <body ng-controller="TicketController">
@@ -29,7 +31,6 @@
 Tags:
 <br/>
 <input type="text" ng-model="tags"/>{{hello}}
-
 {{help()}}
 <ul>
     <li ng-repeat="ticket in tickets">{{ticket.subject}}--{{ticket.owner}}</li>

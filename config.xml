@@ -9,4 +9,9 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <!-- Plugins -->
+    <plugin name="Camera" value="org.apache.cordova.CameraLaunch" />
+
+
 </widget>
