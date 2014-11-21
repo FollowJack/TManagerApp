@@ -13,5 +13,4 @@
     <!-- Plugins -->
     <plugin name="Camera" value="org.apache.cordova.CameraLaunch" />
 
-
 </widget>
